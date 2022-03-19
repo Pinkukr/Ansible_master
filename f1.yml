@@ -1,0 +1,19 @@
+---
+ - fruits:
+      apple
+      mango
+      orange
+ 
+ - vegetable:
+     - leaf vegetable:
+            dhania patta
+            pudina
+            cauli flower
+            cabbage
+            spring onion
+     - without leaf vegetable:
+          onion
+          tomato
+          potato
+          
+           
