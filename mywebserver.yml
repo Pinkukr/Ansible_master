@@ -10,11 +10,10 @@
   - name: I want to install wget
     apt:
      name: wget
-     state: present
-    when: ansible_os_family == "RedHat"  
-
-  - name: I want to install apache2
-    apt:
-     name: apache2
      state: absent
+    
+  - name: I want to install apache2
+    yum:
+     name: httpd
+     state: present
     when: ansible_os_family == "RedHat"
