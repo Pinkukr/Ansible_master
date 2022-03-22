@@ -9,7 +9,7 @@
     when: ansible_os_family =="Debian"
 
   - name: I want to install wget
-    apt:
+    yum:
      name: wget
      state: present
     when: ansible_os_family =="RedHat"
