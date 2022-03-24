@@ -13,9 +13,4 @@
        name: "{{java_ubuntu}}"
        state: present
     when: ansible_os_family =="Debian"
-
-  - name: Install the 'Gnome desktop' environment group
-    yum:
-      name: "@^gnome-desktop-environment"
-      state: present
-    when: ansible_os_family =="RedHat"
+    

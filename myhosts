@@ -1,9 +1,3 @@
 [mywebserver]
 172.31.8.154
 172.31.5.234
-
-[mywebserver:vars]
-ubn= apache2
-red= httpd
-javaredhat= java-1.8.0-openjdk
-java_ubuntu= openjdk-8-jre
