@@ -3,5 +3,5 @@
 172.31.5.234
 
 [mywebserver:vars]
-ubn=apahe2
-red=httpd
+ubn= apache2
+red= httpd
