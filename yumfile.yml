@@ -2,8 +2,14 @@
 - hosts: mywebserver
   become: yes
   tasks:
-  - name: I want to install webserver on redhat server
+  - name: I want to install java on redhat server
     yum:
-      name: httpd
-      state: absent
+      name: "{{javaredhat}}"
+      state: present    
     when: ansible_os_family =="RedHat"
+
+  - name: I want to install java on ubuntu server node
+    apt:
+       name: "{{java_ubuntu"
+       state: present
+    when: ansible_os_family =="Debian"
