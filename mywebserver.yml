@@ -10,7 +10,7 @@
 
   - name: I want to install webserber on ubuntu server
     apt:
-     name: apache2
+     name: "{{ubn}}"
      state: present
     when: ansible_os_family =="Debian"
 
@@ -22,12 +22,12 @@
     
   - name: I want to install webserber
     yum:
-     name: httpd
+     name: "{{red{}"
      state: present
     when: ansible_os_family =="RedHat"
 
   - name: I want to start httpd server
     service:
-      name: httpd
+      name: "{{red}}"
       state: started
     when: ansible_os_family =="RedHat"
