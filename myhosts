@@ -2,6 +2,6 @@
 172.31.8.154
 172.31.5.234
 
-[mywebserver: vars]
-ubn= apahe2
-red= httpd
+[mywebserver:vars]
+ubn=apahe2
+red=httpd
