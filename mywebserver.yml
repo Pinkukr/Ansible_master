@@ -22,7 +22,7 @@
     
   - name: I want to install webserber
     yum:
-     name: "{{red{}"
+     name: "{{red}}"
      state: present
     when: ansible_os_family =="RedHat"
 
