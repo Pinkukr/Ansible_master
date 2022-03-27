@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to uninstalled tree,wget,apche2
+    apt:
+      name: "{{item}}"
+      state: absent
+    loop:
+       - "{{var1}}"
+       - "{{var2}}"
+       - "{{var3}}"
+    when: ansible_os_family == "Debian"
+    
