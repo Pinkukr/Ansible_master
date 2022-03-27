@@ -14,4 +14,12 @@
     apt:
       name: "{{myvar1}}"
       state: present
-      
+
+  - name: i want to install tree, wget
+    apt:
+       name: "{{item}}"
+       state: present
+    loop:
+       - "{{var2}}"
+       - "{{var3}}"
+       
