@@ -2,3 +2,4 @@
 var1: tree
 var2: apache2
 var3: wget
+var4: httpd
