@@ -31,5 +31,5 @@
     service:
         name: httpd
         state: started
-    when: ansible_os_family == "RedHat"
-          myresult.stderr != ""
+    when: (ansible_os_family == "RedHat") and  (myresult.stderr != "")
+         
