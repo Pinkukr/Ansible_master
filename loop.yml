@@ -32,4 +32,5 @@
         name: httpd
         state: started
     when: (ansible_os_family == "RedHat") and  (myresult.stderr == "")
+    tags: httpd
          
