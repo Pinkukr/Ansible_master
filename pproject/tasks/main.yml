@@ -8,7 +8,7 @@
   notify: restartwebserver
 
 - name: i want to create jinja file
-  templats:
+  template:
        src: template/web.j2
        dest: /var/www/html/index.html
   notify: restartwebserver
