@@ -1,5 +1,5 @@
 ---
 - hosts: firstnode
   become: yes
-  role:
+  roles:
   -  {role: pproject}
