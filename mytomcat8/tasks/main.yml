@@ -1,2 +1,7 @@
 ---
 # tasks file for mytomcat8
+- include_tasks: installjava.yml
+- include_tasks: cratetomcatuser.yml
+- include_tasks: installTomcat8.yml
+- include_tasks: updatepermission.yml
+- include_tasks: systemservicefile.yml

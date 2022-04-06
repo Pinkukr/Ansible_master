@@ -1,0 +1,5 @@
+---
+- hosts: firstnode
+  become: yes
+  roles: 
+    - {role:mytomcat8, ansible_os_family=="Debian"}
