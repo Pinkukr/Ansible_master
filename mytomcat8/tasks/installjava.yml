@@ -1,11 +1,10 @@
 ---
-- tasks:
-  - name: i want to update 
-    apt:
-      update_cache: yes
+- name: i want to update 
+  apt:
+    update_cache: yes
 
-  - name: i want to install java on ubuntu node
-    apt:
-      name: default-jdk
-      state: present
+- name: i want to install java on ubuntu node
+  apt:
+    name: default-jdk
+    state: present
       
