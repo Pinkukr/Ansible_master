@@ -1,0 +1,20 @@
+---
+- name: add a login to our Tomcat server
+  file:
+     src: template/tomuser.j2
+     dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: add a login to our Tomcat server
+  file:
+     src: template/context.j2
+     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: add a login to our Tomcat server
+  file:
+     src: template/hostcontext.j2
+     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml     
+
+- name: enable and reload the systemd
+  systemd:
+    name: tomcat
+    daemon_reload: yes
