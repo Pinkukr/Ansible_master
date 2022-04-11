@@ -21,13 +21,13 @@
 
 - name: Make the tomcat user the owner of the webapps,work,temp,logs directories
   file:
-    path: "{{item}}"
-    recurse: yes
-    owner: tomcat
-    state: directory
+      path: "{{item}}"
+      recurse: yes
+      owner: tomcat
+      state: directory
   loops:
-    - /opt/tomcat/webapps
-    - /opt/tomcat/work
-    - /opt/tomcat/temp
-    - /opt/tomcat/logs
+  - /opt/tomcat/webapps
+  - /opt/tomcat/work
+  - /opt/tomcat/temp
+  - /opt/tomcat/logs
     
