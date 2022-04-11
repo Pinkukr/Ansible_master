@@ -1,0 +1,21 @@
+---
+- name: crete tomcat-users.xml file
+  template:
+     src: template/tomuser.j2
+     dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: crete tomcat manager context.xml file
+  template:
+     src: template/tom_manager.j2
+     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: crete tomcat host manager context.xml file
+  template:
+     src: template/tom_host_manager.j2
+     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+- name: start tomcat
+  systemd:
+    name: tomcat
+    enabled: yes
+    state: started

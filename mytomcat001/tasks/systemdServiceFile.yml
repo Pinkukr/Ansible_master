@@ -1,0 +1,12 @@
+---
+- name: i want to create the systemd service file
+  template:
+     src: template/systemfile.j2
+     dest: /etc/systemd/system/tomcat.service
+
+- name: start tomcat
+  systemd:
+    name: tomcat
+    enabled: yes
+    state: started
+    daemon_reload: yes

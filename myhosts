@@ -10,3 +10,6 @@
 
 [firstnode]
 172.31.15.107
+
+[tomcatserver]
+172.31.1.141

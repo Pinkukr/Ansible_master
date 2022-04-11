@@ -1,0 +1,18 @@
+---
+- hosts: Localhost
+  become: yes
+  tasks:
+  - name: i want to create ec2 instance_type
+    ec2: 
+        key_name: Tokyo_key
+        instance_type: t2.micro
+        image: ami-059d47597e61166c2
+        wait: yes
+        group: ansible
+        region: ap-northeast-1
+        count: 2
+        vpc_subnet_id: subnet-05cf4b5a6531bf716
+        assign_public_ip: yes
+        instance_tags:
+          Name: myansiblenode
+        
